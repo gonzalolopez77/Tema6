@@ -17,7 +17,7 @@ public class main {
 
             // Comprobamos si existen mas datos que leer
             while (sc.hasNextDouble()) {
-                double numero = sc.nextDouble(); // Lee el siguiente numnero
+                double numero = sc.nextDouble(); // Lee el siguiente numunero
                 suma += numero;
                 contador++;
             }
