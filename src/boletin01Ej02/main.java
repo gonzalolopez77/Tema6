@@ -1,4 +1,4 @@
-package boletin01Ej01;
+package boletin01Ej02;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,17 +7,14 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        double suma = 0;
+        int suma = 0;
         int contador = 0;
 
-        try (Scanner sc = new Scanner(new FileReader("src/boletin01Ej01/NumerosReales.txt"))) {
-            
-            // Usamos el punto como separador decimal
-            sc.useLocale(Locale.US);
+        try (Scanner sc = new Scanner(new FileReader("src/boletin01Ej02/NumEnteros.txt"))) {
 
             // Comprobamos si existen mas datos que leer
-            while (sc.hasNextDouble()) {
-                double numero = sc.nextDouble(); // Lee el siguiente numero
+            while (sc.hasNextInt()) {
+                int numero = sc.nextInt(); // Lee el siguiente numero
                 suma += numero;
                 contador++;
             }
